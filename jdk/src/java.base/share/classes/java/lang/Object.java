@@ -36,7 +36,57 @@ import jdk.internal.HotSpotIntrinsicCandidate;
  * @see     java.lang.Class
  * @since   1.0
  */
+/**
+ * @author dingzhencong
+ * Object 类共有13个方法
+ * 以下为方法签名和相应的注释：
+ *
+ * 构造函数
+ * public Object()
+ *
+ * private static native void registerNatives()
+ *
+ * 本地CLONE方法，用于对象的复制
+ * protected native Object clone()
+ *
+ * 对象比较
+ * public boolean equals(Object obj)
+ *
+ * 当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法。
+ * protected void finalize()
+ *
+ * 返回Class对象
+ * public final native Class getClass()
+ *
+ * public native int hashCode()
+ *
+ * 唤醒在此对象监视器上等待的单个线程
+ * public final native void notify()
+ *
+ * 唤醒在此对象监视器上等待的所有线程
+ * public final native void notifyAll()
+ *
+ * 返回该对象的字符串表示。
+ * public String toString()
+ *
+ * 在其他线程调用此对象的 notify() 方法或 notifyAll() 方法前，导致当前线程等待。
+ * 换句话说，此方法的行为就好像它仅执行 wait(0) 调用一样。
+ * 当前线程必须拥有此对象监视器。该线程发布对此监视器=的所有权并等待，
+ * 直到其他线程通过调用 notify 方法，或 notifyAll 方法通知在此对象的监视器上等待的线程醒来。然后该线程将等到重新获得对监视器的所有权后才能继续执行
+ * public final void wait()
+ *
+ * 在其他线程调用此对象的 notify() 方法或 notifyAll() 方法，或者超过指定的时间量前，导致当前线程等待
+ * public final native void wait(long timeout)
+ *
+ * 在其他线程调用此对象的 notify() 方法或 notifyAll() 方法，
+ * 或者其他某个线程中断当前线程，或者已超过某个实际时间量前，导致当前线程等待。
+ * public final void wait(long timeout, int nanos)
+ *
+ */
 public class Object {
+
+
+
 
     private static native void registerNatives();
     static {
