@@ -82,11 +82,10 @@ import jdk.internal.HotSpotIntrinsicCandidate;
  * 或者其他某个线程中断当前线程，或者已超过某个实际时间量前，导致当前线程等待。
  * public final void wait(long timeout, int nanos)
  *
+ * 总结 Object native 方法总共有7个，分别是clone,hashcode,getClass,notify,notifyAll,wait,registerNatives.
+ *
  */
 public class Object {
-
-
-
 
     private static native void registerNatives();
     static {
