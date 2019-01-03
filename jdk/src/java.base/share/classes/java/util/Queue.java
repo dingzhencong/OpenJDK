@@ -128,6 +128,20 @@ package java.util;
  * <a href="{@docRoot}/java/util/package-summary.html#CollectionsFramework">
  * Java Collections Framework</a>.
  *
+ * Queue接口总结:
+ *     //插入队尾（抛出异常）
+ *     boolean add(E e);
+ *     //插入队尾（返回特殊值 false）
+ *     boolean offer(E e);
+ *     //移除头节点（抛出异常）
+ *     E remove();
+ *     //移除头节点（返回特殊值 null）
+ *     E poll();
+ *     //检查头节点（抛出异常）
+ *     E element();
+ *     //检查头节点（返回特殊值 null）
+ *     E peek();
+ *
  * @since 1.5
  * @author Doug Lea
  * @param <E> the type of elements held in this queue

@@ -112,7 +112,7 @@ import jdk.internal.HotSpotIntrinsicCandidate;
  *
  *   （十三）
  *  registerNatives()：对本地方法进行注册
- *  
+ *
  */
 public class Object {
 
