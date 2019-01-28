@@ -107,6 +107,11 @@ package java.util;
  * @see Collections#singleton(java.lang.Object)
  * @see Collections#EMPTY_SET
  * @since 1.2
+ *
+ * Set集合与Collection集合基本相同，没有提供任何额外方法。实际上Set就是Collection,只是行为略有不同（Set不允许包含重复元素）。
+ * Set集合注重独一无二的性质,该体系集合可以知道某物是否已近存在于集合中,不会存储重复的元素。用于存储无序(存入和取出的顺序不一定相同)元素，值不能重复。
+ * 如果试图把两个相同的元素加入同一个Set集合中，则添加操作失败，add()方法返回false，且新元素不会被加入。
+ *
  */
 
 public interface Set<E> extends Collection<E> {
