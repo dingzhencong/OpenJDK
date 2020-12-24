@@ -1,3 +1,9 @@
+<div align="center">
+    <img src="" width="200px">
+</div>
+
+
+
 Welcome to OpenJDK!
 ===================
 
