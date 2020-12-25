@@ -807,6 +807,7 @@ public class PrintStream extends FilterOutputStream
         *
         * */
         synchronized (this) {
+            print("============");
             print(x);
             newLine();
         }
