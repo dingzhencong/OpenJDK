@@ -113,7 +113,6 @@ package java.util;
  * 如果试图把两个相同的元素加入同一个Set集合中，则添加操作失败，add()方法返回false，且新元素不会被加入。
  *
  */
-
 public interface Set<E> extends Collection<E> {
     // Query Operations
 
