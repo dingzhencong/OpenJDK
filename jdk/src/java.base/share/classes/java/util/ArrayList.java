@@ -192,11 +192,9 @@ public class ArrayList<E> extends AbstractList<E>
      * list's current size.  An application can use this operation to minimize
      * the storage of an {@code ArrayList} instance.
      */
-    //将当前容量值设为实际元素个数
     public void trimToSize() {
         modCount++;
         if (size < elementData.length) {
-            //调整数组缓冲区elementData，变为实际存储大小Arrays.copyOf(elementData,size)
             elementData = (size == 0)
               ? EMPTY_ELEMENTDATA
               : Arrays.copyOf(elementData, size);
@@ -210,7 +208,6 @@ public class ArrayList<E> extends AbstractList<E>
      *
      * @param minCapacity the desired minimum capacity
      */
-    //确定ArrayList的容量。(指定最小容量)
     public void ensureCapacity(int minCapacity) {
         if (minCapacity > elementData.length
             && !(elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA

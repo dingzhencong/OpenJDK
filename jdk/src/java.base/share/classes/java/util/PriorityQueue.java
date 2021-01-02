@@ -80,23 +80,6 @@ import java.util.function.Consumer;
  * @author Josh Bloch, Doug Lea
  * @param <E> the type of elements held in this queue
  *
- *   基于优先级堆的无界的优先级队列。
- * PriorityQueue的元素根据自然排序进行排序，或者按队列构建时提供的 Comparator进行排序，具体取决于使用的构造方法。
- * 优先队列不允许 null 元素。
- * 通过自然排序的PriorityQueue不允许插入不可比较的对象。
- * 该队列的头是根据指定排序的最小元素。
- * 如果多个元素都是最小值，则头部是其中的一个元素——任意选取一个。
- * 队列检索操作poll、remove、peek和element访问队列头部的元素。
- * 优先队列是无界的，但有一个内部容量，用于管理用于存储队列中元素的数组的大小。
- * 基本上它的大小至少和队列大小一样大。
- * 当元素被添加到优先队列时，它的容量会自动增长。增长策略的细节没有指定
- *
- * 注意：
- * 1.PriorityQueue不是线程安全的。如果多个线程中的任意线程从结构上修改了列表， 则这些线程不应同时访问 PriorityQueue 实例，这时请使用线程安全的PriorityBlockingQueue 类。
- * 2.不允许插入 null 元素。
- * 3.PriorityQueue实现插入方法（offer、poll、remove() 和 add 方法） 的时间复杂度是O(log(n)) ；实现 remove(Object) 和 contains(Object) 方法的时间复杂度是O(n) ；实现检索方法（peek、element 和 size）的时间复杂度是O(1)。所以在遍历时，若不需要删除元素，则以peek的方式遍历每个元素。
- * 4.方法iterator()中提供的迭代器并不保证以有序的方式遍历PriorityQueue中的元素。
- *
  *
  */
 public class PriorityQueue<E> extends AbstractQueue<E>

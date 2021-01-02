@@ -133,16 +133,6 @@ import java.util.function.UnaryOperator;
  * @see AbstractSequentialList
  * @since 1.2
  *
- * List集合代表一个元素有序、可重复的集合，集合中每个元素都有对应的顺序索引。List集合允许使用重复元素，可以通过索引来访问指定位置的集合元素。
- * List集合默认是按元素的添加顺序设置元素的索引，例如：第一个添加的元素索引为0，第二个添加的元素索引为1......
- * List作为Collection接口的子接口，可以使用Collection接口里的全部方法。
- * 因为List是有序集合，List集合里增加了一些根据索引来操作集合元素的方法。
- *
- * 增删改查：add(index,object)、remove(index)、set(index,object)、get(index);
- * 搜索：indexOf(),lastIndexOf();
- * 迭代器：listIterator();
- * 获取列表中的小列表：subList(int fromIndex, int toIndex);
- *
  */
 
 public interface List<E> extends Collection<E> {

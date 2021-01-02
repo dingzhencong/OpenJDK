@@ -140,7 +140,6 @@ import java.util.stream.StreamSupport;
  * @see     AbstractCollection
  * @since 1.2
  *
- * 集合框架的父接口，定义了一些基本操作：
  * 1.add(E)
  * 2.remove(Object)
  * 3.contains(Object)
