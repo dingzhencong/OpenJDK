@@ -185,10 +185,6 @@ package java.util;
  * <a href="{@docRoot}/java/util/package-summary.html#CollectionsFramework">
  * Java Collections Framework</a>.
  *
- * 双向队列：
- * 在Queue的基础上添加了头尾配套的方法，值得注意的是，将Queue的Element()方法改成了getFirst()和getLast();
- *
- *
  * @author Doug Lea
  * @author Josh Bloch
  * @since  1.6
