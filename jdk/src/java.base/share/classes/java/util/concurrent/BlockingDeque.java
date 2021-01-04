@@ -199,6 +199,8 @@ import java.util.NoSuchElementException;
  * @since 1.6
  * @author Doug Lea
  * @param <E> the type of elements held in this deque
+ *
+ * 只有一个实现类LinkedBlockingDeque。
  */
 public interface BlockingDeque<E> extends BlockingQueue<E>, Deque<E> {
     /*
